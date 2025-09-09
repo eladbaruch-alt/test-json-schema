@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://ai21.com/global.schema.json",
+    "title": "AI21 Global Schema",
+    "description": "Common global configuration for all AI21 helm charts",
+    "type": "object",
+    "properties": {
+        "env": {
+            "type": "string",
+            "description": "Environment name (e.g., production, staging, sandbox)"
+        },
+        "project": {
+            "type": "string",
+            "description": "Project name (e.g., algo, studio, wordtune)"
+        }
+    },
+    "required": [
+        "env",
+        "project"
+    ]
+}
